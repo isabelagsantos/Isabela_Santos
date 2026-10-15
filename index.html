@@ -95,6 +95,7 @@ h2 em{font-style:normal;color:var(--pink)}
 .repo p{font-size:.92rem;color:var(--muted)}
 .repo .meta{font-size:.8rem;font-family:"Fira Code",monospace;margin-top:auto}
 .repo-note{color:var(--muted);font-size:.95rem}
+.repos-more{display:flex;justify-content:center;margin-top:22px}
 
 /* Skills */
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
@@ -365,6 +366,12 @@ footer{background:var(--ink);color:#e9e2cf;text-align:center;font-size:.85rem;pa
   <div class="repos" id="repos">
     <p class="repo-note"><span data-l="pt">Carregando repositórios…</span><span data-l="en">Loading repositories…</span></p>
   </div>
+  <div class="repos-more">
+    <a class="btn" href="https://github.com/isabelagsantos?tab=repositories" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+      <span data-l="pt">Ver todos os repositórios</span><span data-l="en">See all repositories</span>
+    </a>
+  </div>
 </section>
 
 <section id="habilidades">
@@ -493,13 +500,19 @@ footer{background:var(--ink);color:#e9e2cf;text-align:center;font-size:.85rem;pa
   // GitHub repos (public API, no token needed)
   var box=document.getElementById('repos');
   function fallback(){
-    box.innerHTML='<p class="repo-note"><span data-l="pt">Veja todos os repositórios em </span><span data-l="en">See all repositories at </span><a href="https://github.com/isabelagsantos" target="_blank" rel="noopener">github.com/isabelagsantos</a>.</p>';
+    box.innerHTML='<p class="repo-note"><span data-l="pt">Não foi possível carregar os repositórios agora.</span><span data-l="en">Could not load repositories right now.</span></p>';
   }
   function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  fetch('https://api.github.com/users/isabelagsantos/repos?sort=updated&per_page=30')
+  // Mais curtidos (estrelas) primeiro; empate ou nenhuma estrela -> mais recentes
+  fetch('https://api.github.com/users/isabelagsantos/repos?per_page=100')
     .then(function(r){if(!r.ok)throw 0;return r.json()})
     .then(function(list){
-      list=list.filter(function(r){return !r.fork && r.name.toLowerCase()!=='isabelagsantos.github.io'}).slice(0,6);
+      var skip=['isabelagsantos.github.io','isabela_santos'];
+      list=list.filter(function(r){return !r.fork && skip.indexOf(r.name.toLowerCase())<0})
+        .sort(function(a,b){
+          return (b.stargazers_count-a.stargazers_count) ||
+                 (new Date(b.pushed_at||b.updated_at)-new Date(a.pushed_at||a.updated_at));
+        }).slice(0,6);
       if(!list.length){fallback();return}
       box.innerHTML=list.map(function(r){
         return '<a class="box repo" href="'+esc(r.html_url)+'" target="_blank" rel="noopener"><h3>'+esc(r.name)+'</h3>'+

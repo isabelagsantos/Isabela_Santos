@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currículo · Isabela Gonçalves dos Santos</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<meta name="apple-mobile-web-app-title" content="Isabela Santos">
+<meta name="theme-color" content="#FAD86B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#FAD86B;--pink:#F2416B;--teal:#9EDCDB;--teal-soft:#E3F5F4;--ink:#2B2B2B;--muted:#55504a;--paper:#FFFBEE}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Fira Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:9.2pt;line-height:1.36}
+html[data-lang="pt"] [data-l="en"], html[data-lang="en"] [data-l="pt"]{display:none!important}
+a{color:inherit;text-decoration:none}
+.toolbar{max-width:210mm;margin:16px auto 10px;display:flex;gap:10px;justify-content:space-between;align-items:center;padding:0 12px;font-size:11pt}
+.toolbar a.back{font-weight:600}
+.toolbar .r{display:flex;gap:8px}
+.toolbar button{font:inherit;font-weight:600;border:2px solid var(--ink);border-radius:999px;padding:4px 14px;background:#fff;cursor:pointer;color:var(--ink)}
+html[data-lang="pt"] [data-set="pt"], html[data-lang="en"] [data-set="en"]{background:var(--teal)}
+.page{width:210mm;min-height:297mm;margin:0 auto 24px;background:#fff;box-shadow:0 6px 24px rgba(0,0,0,.12);display:grid;grid-template-columns:62mm 1fr}
+.side{background:var(--yellow);padding:10mm 6mm 8mm;border-right:2px solid var(--ink);position:relative;overflow:hidden}
+.side::after{content:"";position:absolute;right:-26mm;bottom:-26mm;width:44mm;height:44mm;border-radius:50%;border:9mm solid var(--pink);opacity:.9}
+.side>*{position:relative;z-index:1}
+.namebox{background:var(--teal);border:2px solid var(--ink);border-radius:10px;padding:10px;text-align:center;box-shadow:0 4px 8px rgba(0,0,0,.15)}
+.namebox h1{font-size:15pt;line-height:1.15;font-weight:700}
+.rolepill{margin-top:8px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:4px 8px;text-align:center;font-size:8.6pt;font-weight:600}
+.side h2{font-size:9.5pt;margin:11px 0 5px;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:6px}
+.side h2::before{content:"";width:9px;height:9px;background:var(--pink);border:1.5px solid var(--ink);border-radius:50%}
+.contact li{list-style:none;font-size:7.9pt;margin:3px 0;overflow-wrap:anywhere}
+.contact b{display:block;font-size:7.6pt;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-size:8pt;background:#fff;border:1.3px solid var(--ink);border-radius:999px;padding:0 7px}
+.chip.hi{background:var(--teal);font-weight:600}
+.side p{font-size:8.6pt}
+.main{padding:10mm 9mm 8mm 8mm}
+.main h2{font-size:11.5pt;text-transform:uppercase;letter-spacing:.06em;color:var(--pink);border-bottom:2px solid var(--ink);padding-bottom:2px;margin:9px 0 5px}
+.main h2:first-child{margin-top:0}
+.summary{text-align:justify}
+.job{margin-bottom:6px;break-inside:avoid}
+.job-h{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.job h3{font-size:10.2pt}
+.date{font-size:8.2pt;white-space:nowrap;background:var(--teal-soft);border:1.2px solid var(--ink);border-radius:999px;padding:0 7px}
+.org{color:var(--muted);font-weight:500;font-size:9.2pt}
+.job ul{margin:3px 0 0 14px}
+.job li{margin:1px 0}
+.job li::marker{color:var(--pink)}
+@media print{
+  @page{size:A4;margin:0}
+  body{background:#fff}
+  .toolbar{display:none}
+  .page{margin:0;box-shadow:none;width:210mm;height:296mm;overflow:hidden}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media screen and (max-width:820px){
+  .page{width:auto;grid-template-columns:1fr;margin:0 12px 24px;min-height:0}
+  .side{border-right:0;border-bottom:2px solid var(--ink);padding:20px 16px}
+  .main{padding:20px 16px}
+}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a class="back" href="index.html">← <span data-l="pt">Voltar ao site</span><span data-l="en">Back to site</span></a>
+  <div class="r">
+    <button data-set="pt">PT</button><button data-set="en">EN</button>
+    <button id="pdf"><span data-l="pt">Baixar PDF</span><span data-l="en">Download PDF</span></button>
+  </div>
+</div>
+
+<div class="page">
+  <aside class="side">
+    <div class="namebox"><h1>Isabela Gonçalves dos Santos</h1></div>
+    <div class="rolepill"><span data-l="pt">Análise &amp; Ciência de Dados</span><span data-l="en">Data Analysis &amp; Data Science</span></div>
+
+    <h2><span data-l="pt">Contato</span><span data-l="en">Contact</span></h2>
+    <ul class="contact">
+      <li><b>E-mail</b>isabelagsantos.contato@gmail.com</li>
+      <li><b data-l="pt">E-mail acadêmico</b><b data-l="en">Academic e-mail</b>isabelasantos.ufmg@gmail.com</li>
+      <li><b data-l="pt">Telefone</b><b data-l="en">Phone</b><span data-l="pt">(31) 98751-5305</span><span data-l="en">+55 31 98751-5305</span></li>
+      <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/isabela-gon%C3%A7alves-dos-santos">linkedin.com/in/isabela-gonçalves-dos-santos</a></li>
+      <li><b>GitHub</b><a href="https://github.com/isabelagsantos">github.com/isabelagsantos</a></li>
+      <li><b>Portfolio</b><a href="https://github.com/isabelagsantos/isabela_santos">github.com/isabelagsantos/<wbr>isabela_santos</a></li>
+      <li><b>ORCID</b><a href="https://orcid.org/0009-0008-1477-3238">0009-0008-1477-3238</a></li>
+      <li><b>Lattes</b><a href="https://lattes.cnpq.br/9775676901926642">lattes.cnpq.br/9775676901926642</a></li>
+      <li><b data-l="pt">Local</b><b data-l="en">Location</b>Belo Horizonte, MG · <span data-l="pt">Brasil</span><span data-l="en">Brazil</span></li>
+    </ul>
+
+    <h2><span data-l="pt">Ferramentas</span><span data-l="en">Tools</span></h2>
+    <div class="chips"><span class="chip hi">R</span><span class="chip hi">Python</span><span class="chip hi">SQL</span><span class="chip">Excel</span><span class="chip">Git/GitHub</span><span class="chip">Google Workspace</span></div>
+
+    <h2><span data-l="pt">Estatística</span><span data-l="en">Statistics</span></h2>
+    <div class="chips">
+      <span class="chip hi" data-l="pt">Inferência</span><span class="chip hi" data-l="en">Inference</span>
+      <span class="chip" data-l="pt">Regressão</span><span class="chip" data-l="en">Regression</span>
+      <span class="chip" data-l="pt">Análise de sobrevida</span><span class="chip" data-l="en">Survival analysis</span>
+      <span class="chip" data-l="pt">Validação de modelos</span><span class="chip" data-l="en">Model validation</span>
+      <span class="chip" data-l="pt">Métricas de classificação</span><span class="chip" data-l="en">Classification metrics</span>
+      <span class="chip" data-l="pt">Imputação</span><span class="chip" data-l="en">Imputation</span>
+      <span class="chip" data-l="pt">Simulação</span><span class="chip" data-l="en">Simulation</span>
+    </div>
+
+    <h2><span data-l="pt">Dados</span><span data-l="en">Data</span></h2>
+    <div class="chips">
+      <span class="chip" data-l="pt">Limpeza e tratamento</span><span class="chip" data-l="en">Cleaning &amp; wrangling</span>
+      <span class="chip" data-l="pt">Integração de bases</span><span class="chip" data-l="en">Data integration</span>
+      <span class="chip" data-l="pt">EDA</span><span class="chip" data-l="en">EDA</span>
+      <span class="chip" data-l="pt">Visualização</span><span class="chip" data-l="en">Visualization</span>
+      <span class="chip" data-l="pt">Relatórios</span><span class="chip" data-l="en">Reporting</span>
+    </div>
+
+    <h2><span data-l="pt">Domínios</span><span data-l="en">Domains</span></h2>
+    <div class="chips">
+      <span class="chip" data-l="pt">Saúde</span><span class="chip" data-l="en">Healthcare</span>
+      <span class="chip hi" data-l="pt">Oncologia</span><span class="chip hi" data-l="en">Oncology</span>
+      <span class="chip" data-l="pt">Economia da saúde</span><span class="chip" data-l="en">Health economics</span>
+      <span class="chip" data-l="pt">Seguros</span><span class="chip" data-l="en">Insurance</span>
+      <span class="chip" data-l="pt">Previdência</span><span class="chip" data-l="en">Pensions</span>
+    </div>
+
+    <h2><span data-l="pt">Idiomas</span><span data-l="en">Languages</span></h2>
+    <p data-l="pt">Português: nativo<br>Inglês: avançado (C1)</p>
+    <p data-l="en">Portuguese: native<br>English: advanced (C1)</p>
+  </aside>
+
+  <main class="main">
+    <h2><span data-l="pt">Resumo</span><span data-l="en">Summary</span></h2>
+    <p class="summary" data-l="pt">Analista de dados em formação (Ciências Atuariais, UFMG) com experiência no ciclo completo de análise: extração, limpeza e integração de bases, análise exploratória, modelagem estatística, validação de modelos preditivos e comunicação de resultados para tomada de decisão. Atuo hoje com dados clínicos, genômicos e econômicos, incluindo a validação de um modelo de IA em estudo multicêntrico e análises de custo-efetividade para o SUS, e tenho base em dados atuariais e financeiros de seguros e previdência. Trabalho com R, Python e SQL.</p>
+    <p class="summary" data-l="en">Aspiring data analyst (Actuarial Science, UFMG) with hands-on experience across the full analysis cycle: data extraction, cleaning and integration, exploratory analysis, statistical modeling, predictive model validation and communicating results for decision-making. I currently work with clinical, genomic and economic data, including validating an AI model in a multicenter study and cost-effectiveness analyses for Brazil's public health system (SUS), backed by a foundation in actuarial and financial data from insurance and pensions. I work with R, Python and SQL.</p>
+
+    <h2><span data-l="pt">Experiência</span><span data-l="en">Experience</span></h2>
+
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Ciência de Dados em Pesquisa Clínica</span><span data-l="en">Data Science in Clinical Research</span></h3><span class="date"><span data-l="pt">03/2026 - atual</span><span data-l="en">Mar 2026 - present</span></span></div>
+      <div class="org">OncoTag · <span data-l="pt">Projeto VICTORIA</span><span data-l="en">VICTORIA Project</span></div>
+      <ul data-l="pt">
+        <li>Validação de modelo de IA para predição de benefício à quimioterapia em câncer de mama triplo-negativo e ovário, em estudo multicêntrico com mais de 5 instituições, entre elas UFMG, UNICAMP, Mário Penna, Ophir Loyola e Hospital de Amor.</li>
+        <li>Modelagem de custo-efetividade incremental (ACEI/RCEI) e análise de impacto orçamentário no SUS.</li>
+        <li>Coleta, estruturação e integração de dados clínicos e econômicos; resultados comunicados a equipe multidisciplinar.</li>
+      </ul>
+      <ul data-l="en">
+        <li>Validating an AI model that predicts chemotherapy benefit in triple-negative breast and ovarian cancer in a multicenter study with 5+ institutions, including UFMG, UNICAMP, Mário Penna, Ophir Loyola and Hospital de Amor.</li>
+        <li>Incremental cost-effectiveness modeling (ICER) and budget impact analysis for Brazil's public health system.</li>
+        <li>Collected, structured and integrated clinical and economic data; communicated results to a multidisciplinary team.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Analista de Dados em Pesquisa Oncológica</span><span data-l="en">Oncology Research Data Analyst</span></h3><span class="date"><span data-l="pt">04/2026 - atual</span><span data-l="en">Apr 2026 - present</span></span></div>
+      <div class="org">Instituto Mário Penna</div>
+      <ul data-l="pt">
+        <li>Validação externa duplo-cega de algoritmo diagnóstico para câncer de mama baseado em biomarcadores: sensibilidade, especificidade, VPP/VPN, razões de verossimilhança e acurácia.</li>
+        <li>Análise de sobrevida e tempo até o tratamento com dados do Registro Hospitalar de Câncer, da extração ao relatório.</li>
+        <li>Análise de dados genômicos (painel NGS) e clínicos de câncer hereditário, com testes de associação e odds ratio.</li>
+        <li>Estruturação da metodologia estatística de uma plataforma de oncologia de precisão.</li>
+        <li>Limpeza de dados, construção de escores (FSFI), testes de hipótese, correlações, tabelas e gráficos.</li>
+      </ul>
+      <ul data-l="en">
+        <li>Double-blind external validation of a biomarker-based breast cancer diagnostic algorithm: sensitivity, specificity, PPV/NPV, likelihood ratios and accuracy.</li>
+        <li>Survival and time-to-treatment analysis on Hospital Cancer Registry data, from extraction to report.</li>
+        <li>Analysis of genomic (NGS panel) and clinical data on hereditary cancer, with association tests and odds ratios.</li>
+        <li>Designed the statistical methodology for a precision oncology platform.</li>
+        <li>Data cleaning, score construction (FSFI), hypothesis testing, correlations, tables and charts.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Iniciação Científica em Estatística Computacional</span><span data-l="en">Undergraduate Researcher, Computational Statistics</span></h3><span class="date"><span data-l="pt">03/2026 - atual</span><span data-l="en">Mar 2026 - present</span></span></div>
+      <div class="org">UFMG</div>
+      <ul data-l="pt"><li>Implementação e comparação em R de métodos de imputação de dados faltantes em bases reais e simuladas, avaliados por métricas estatísticas.</li></ul>
+      <ul data-l="en"><li>Implemented and benchmarked missing-data imputation methods in R on real and simulated data, evaluated with statistical metrics.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Estagiária em Perícia Atuarial e Consultoria</span><span data-l="en">Actuarial Consulting Intern</span></h3><span class="date"><span data-l="pt">08/2025 - 03/2026</span><span data-l="en">Aug 2025 - Mar 2026</span></span></div>
+      <div class="org">CCC Consultoria e Assessoria Ltda.</div>
+      <ul data-l="pt">
+        <li>Tratamento e validação de bases financeiras e atuariais para estudos técnicos em seguros e previdência.</li>
+        <li>Cálculos e estimativas com estatística e matemática financeira; planilhas analíticas com rastreabilidade dos dados; apoio a pareceres técnicos.</li>
+      </ul>
+      <ul data-l="en">
+        <li>Cleaned and validated financial and actuarial datasets for technical studies in insurance and pensions.</li>
+        <li>Statistical and financial-math estimates; traceable analytical spreadsheets; support for technical reports.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Atendente</span><span data-l="en">Sales Associate</span></h3><span class="date"><span data-l="pt">06/2024 - 04/2025</span><span data-l="en">Jun 2024 - Apr 2025</span></span></div>
+      <div class="org">Outlet de Livro</div>
+      <ul data-l="pt"><li>Controle de estoque, vendas e fluxo de caixa em Excel/Google Workspace; conciliação de caixa e relatórios operacionais.</li></ul>
+      <ul data-l="en"><li>Tracked inventory, sales and cash flow in Excel/Google Workspace; cash reconciliation and operational reports.</li></ul>
+    </div>
+
+    <h2><span data-l="pt">Formação</span><span data-l="en">Education</span></h2>
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Bacharelado em Ciências Atuariais</span><span data-l="en">B.Sc. in Actuarial Science</span></h3><span class="date"><span data-l="pt">2024 - atual</span><span data-l="en">2024 - present</span></span></div>
+      <div class="org">Universidade Federal de Minas Gerais (UFMG)</div>
+    </div>
+    <div class="job">
+      <div class="job-h"><h3><span data-l="pt">Programa de Liderança (VLB32)</span><span data-l="en">Leadership Program (VLB32)</span></h3><span class="date">2023</span></div>
+      <div class="org">Latin American Leadership Academy (LALA)</div>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){root.setAttribute('data-lang',l);root.lang=l==='pt'?'pt-BR':'en';
+    document.title=(l==='pt'?'Currículo':'Résumé')+' · Isabela Gonçalves dos Santos';
+    try{localStorage.setItem('lang',l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  var q=new URLSearchParams(location.search).get('lang');
+  setLang(q==='en'||q==='pt'?q:(saved||((navigator.language||'pt').toLowerCase().startsWith('pt')?'pt':'en')));
+  document.querySelectorAll('[data-set]').forEach(function(b){b.onclick=function(){setLang(b.dataset.set)}});
+  document.getElementById('pdf').onclick=function(){
+    var l=root.getAttribute('data-lang');
+    location.href=l==='pt'?'Curriculo-Isabela-G-Santos.pdf':'Resume-Isabela-G-Santos.pdf';
+  };
+})();
+</script>
+</body>
+</html>

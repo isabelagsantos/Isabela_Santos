@@ -8,7 +8,7 @@ Trabalho com o ciclo completo de dados: extração, limpeza e integração de ba
 - 🏥 Atuo também na validação de algoritmos diagnósticos e em análises de sobrevida e dados genômicos no Instituto Mário Penna
 - 📊 Tenho experiência prévia com dados atuariais e financeiros em consultoria de seguros e previdência
 - 🛠️ Ferramentas: R, Python, SQL, Excel
-- 🌐 Currículo e portfólio completos: **[isabelagsantos.github.io](https://isabelagsantos.github.io)**
+- 🌐 Currículo e portfólio completos: **[isabelagsantos.github.io](https://isabelagsantos.github.io/Isabela_Santos/)**
 
 ## Contato
 

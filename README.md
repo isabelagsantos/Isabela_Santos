@@ -13,5 +13,5 @@ Trabalho com o ciclo completo de dados: extração, limpeza e integração de ba
 ## Contato
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/isabela-gonçalves-dos-santos)
-- 📧 isabelagsantos.contato@gmail.com
+- 📧 E-mail público no perfil no GitHub: [GitHub](github.com/isabelagsantos).
 - 🎓 [Lattes](https://lattes.cnpq.br/9775676901926642) · [ORCID](https://orcid.org/0009-0008-1477-3238)

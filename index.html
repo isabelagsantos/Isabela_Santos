@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isabela Gonçalves dos Santos · Dados</title>
+<meta name="description" content="Isabela Gonçalves dos Santos | Estudante de Ciências Atuariais na UFMG | Ciência de Dados e Estatística | R · Python · Análise de Dados">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<meta name="apple-mobile-web-app-title" content="Isabela Santos">
+<meta name="theme-color" content="#F2416B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#F2416B;--pink-ink:#D01F4B;--pink-soft:#F7849A;--tint:#FDEEF2;--tint-2:#FADCE4;--ink:#2B2B2B;--paper:#FFFBFC;--muted:#5b5650;--radius:16px;--shadow:0 10px 22px rgba(43,43,43,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Fira Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;overflow-x:hidden}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:20;background:rgba(253,238,242,.94);backdrop-filter:blur(6px);border-bottom:2.5px solid var(--ink)}
+.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;gap:20px;padding:10px 20px}
+.logo{font-weight:800;text-decoration:none;font-size:1.1rem;letter-spacing:-.01em}
+.logo b{color:var(--pink)}
+.nav-links{display:flex;gap:18px;margin-left:auto}
+.nav-links a{text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--pink-ink)}
+.hero{position:relative;background:var(--tint);overflow:hidden;border-bottom:2.5px solid var(--ink)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.5;background-image:radial-gradient(rgba(242,65,107,.28) 1px,transparent 1.2px);background-size:7px 7px;pointer-events:none}
+.star{position:absolute;left:-60px;bottom:-110px;width:520px;max-width:90vw;transform:rotate(-8deg)}
+.ring{position:absolute;right:-180px;top:-260px;width:620px;height:620px;border-radius:50%;border:120px solid var(--pink);opacity:.92;background:transparent}
+.ring::after{content:"";position:absolute;inset:-120px;border-radius:50%;background:linear-gradient(200deg,transparent 40%,rgba(255,255,255,.18))}
+.hero-in{position:relative;max-width:1100px;margin:auto;padding:90px 20px 110px;display:flex;justify-content:flex-end}
+.hero-card{max-width:520px;display:flex;flex-direction:column;gap:14px;align-items:stretch}
+.box{background:#fff;border:2.5px solid var(--ink);border-radius:var(--radius);box-shadow:var(--shadow)}
+.name{background:var(--pink);color:#fff;padding:24px 28px;text-align:center}
+.name h1{font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1.12;font-weight:700;letter-spacing:-.01em}
+.pill{border-radius:999px;padding:8px 20px;text-align:center;font-size:1rem;font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;border:2.5px solid var(--ink);border-radius:999px;padding:9px 18px;background:#fff;box-shadow:3px 4px 0 var(--ink);transition:transform .12s, box-shadow .12s}
+.btn:hover{transform:translate(-1px,-2px);box-shadow:4px 6px 0 var(--ink)}
+.btn.primary{background:var(--pink);color:#fff}
+.btn svg{width:18px;height:18px}
+.cv-version{text-align:center;font-family:"Fira Code",monospace;font-size:.8rem;margin-top:2px}
+main{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:72px 0 8px}
+.kicker{display:inline-block;font-family:"Fira Code",monospace;font-size:.85rem;background:var(--ink);color:var(--pink-soft);padding:3px 10px;border-radius:6px;margin-bottom:10px}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem);line-height:1.15;margin-bottom:22px;letter-spacing:-.01em}
+h2 em{font-style:normal;color:var(--pink-ink)}
+.lead{font-size:1.12rem;max-width:780px;margin-bottom:14px}
+.about p{max-width:780px;margin-bottom:12px}
+.xp{display:flex;flex-direction:column;gap:18px}
+.job{background:#fff;padding:22px 24px;border:2.5px solid var(--ink);border-radius:var(--radius);box-shadow:var(--shadow);position:relative}
+.job.main{border-left:12px solid var(--pink)}
+.job-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;align-items:baseline}
+.job h3{font-size:1.18rem}
+.org{color:var(--pink-ink);font-weight:600}
+.job .intro{margin-top:10px}
+.job .label{margin-top:10px;font-weight:600}
+.date{font-family:"Fira Code",monospace;font-size:.85rem;background:var(--tint);border:1.5px solid var(--ink);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.job ul,.case ul{margin:10px 0 0 20px}
+.job li,.case li{margin:5px 0}
+.job li::marker,.case li::marker{color:var(--pink)}
+.tool{color:var(--muted);font-size:.92rem;margin-top:10px}
+.cases{align-items:start;display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:18px}
+.case{padding:22px;display:flex;flex-direction:column;gap:6px}
+.case.now{background:#fff}
+.case.done{background:var(--tint)}
+.case-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:baseline}
+.case h3{font-size:1.08rem;line-height:1.3;flex:1 1 220px}
+.case .tool a{color:var(--pink-ink);font-weight:600}
+.repos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.repo{background:#fff;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:transform .12s}
+.repo:hover{transform:translateY(-3px)}
+.repo h3{font-family:"Fira Code",monospace;font-size:1rem;color:var(--pink-ink);word-break:break-word}
+.repo p{font-size:.92rem;color:var(--muted)}
+.repo .meta{font-size:.8rem;font-family:"Fira Code",monospace;margin-top:auto}
+.repo-note{color:var(--muted);font-size:.95rem}
+.repos-more{display:flex;justify-content:center;margin-top:22px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.skill{padding:20px 22px}
+.skill h3{font-size:1.02rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.skill h3 i{width:12px;height:12px;border-radius:50%;background:var(--pink);border:2px solid var(--ink);display:inline-block}
+.skill p{margin:2px 0}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-size:.88rem;border:1.5px solid var(--ink);border-radius:999px;padding:2px 11px;background:var(--tint)}
+.chip.hi{background:var(--pink);color:#fff;font-weight:600}
+.chip.dev{border-style:dashed;background:#fff}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.edu .box{padding:20px 22px}
+.edu h3{font-size:1.05rem;margin-bottom:4px}
+.edu p{color:var(--muted);font-size:.95rem}
+.contact{margin:80px 0 0;background:var(--pink);color:#fff;border-top:2.5px solid var(--ink);position:relative;overflow:hidden}
+.contact-in{max-width:1100px;margin:auto;padding:64px 20px;position:relative}
+.contact h2 em{color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:10px}
+.link{display:flex;align-items:center;gap:12px;background:#fff;color:var(--ink);text-decoration:none;border:2.5px solid var(--ink);border-radius:999px;padding:10px 18px;font-weight:600;box-shadow:3px 4px 0 var(--ink);transition:transform .12s, box-shadow .12s;min-width:0;flex:0 1 310px}
+.link:hover{transform:translate(-1px,-2px);box-shadow:4px 6px 0 var(--ink)}
+.link svg{width:22px;height:22px;flex:none}
+.link span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.link small{display:block;font-weight:400;font-size:.78rem}
+.contact .mini-star{position:absolute;right:-40px;bottom:-60px;width:260px;opacity:.28}
+footer{background:var(--ink);color:#e9e2cf;text-align:center;font-size:.85rem;padding:18px}
+@media (max-width:760px){
+  .nav-links{display:none}
+  .hero-in{padding:60px 16px 200px;justify-content:center}
+  .star{width:360px;left:-80px;bottom:-130px}
+  .ring{width:420px;height:420px;border-width:80px;right:-220px;top:-220px}
+  main{padding:0 16px}
+  section{padding-top:56px}
+  .job{padding:18px}
+  .cases{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <a class="logo" href="#top">isabela<b>.</b>santos</a>
+  <div class="nav-links">
+    <a href="#sobre">Sobre</a><a href="#experiencias">Experiências</a><a href="#formacao">Formação</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a><a href="#contato">Contato</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <svg class="star" viewBox="0 0 400 400" aria-hidden="true"><polygon fill="#F2416B" points="200,10 222,160 300,40 245,175 390,130 255,205 380,300 240,235 260,395 205,250 150,390 170,240 30,330 150,205 5,170 160,170 95,30 185,155"/></svg>
+  <div class="ring" aria-hidden="true"></div>
+  <div class="hero-in"><div class="hero-card">
+    <div class="box name"><h1>Isabela Gonçalves<br>dos Santos</h1></div>
+    <div class="box pill">Estudante de Ciências Atuariais na UFMG</div>
+    <div class="box pill">Ciência de Dados e Estatística | R · Python · Análise de Dados</div>
+    <div class="hero-cta">
+      <a class="btn primary" href="Isabela-Santos-CV.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>Currículo
+      </a>
+      <a class="btn" href="https://github.com/isabelagsantos" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/isabela-gon%C3%A7alves-dos-santos" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <!-- Ao atualizar o currículo, mude a versão e a data aqui -->
+    <p class="cv-version">Currículo v1.2 · atualizado em novembro/2026</p>
+  </div></div>
+</header>
+
+<main>
+<section id="sobre" class="about">
+  <span class="kicker">01 / sobre</span>
+  <h2>Sobre</h2>
+  <p class="lead">Sou estudante de Ciências Atuariais na UFMG, com formação quantitativa e experiência em análise estatística de dados em projetos de pesquisa. Tenho trabalhado com organização, limpeza e integração de bases, análise exploratória, testes estatísticos, avaliação de modelos preditivos, séries temporais e métodos para lidar com dados faltantes, principalmente utilizando R.</p>
+  <p>Minha experiência inclui projetos com dados clínicos, epidemiológicos, genômicos e econômicos, nos quais participo desde a estruturação das bases até a análise e interpretação dos resultados. Também desenvolvo iniciação científica em Estatística Computacional, estudando e comparando métodos de imputação de dados faltantes.</p><p>Além da pesquisa, gosto de transformar problemas em soluções práticas. Um exemplo é o OncoCusto, ferramenta que idealizei para estruturar e facilitar a coleta e a valoração de custos em avaliações econômicas em saúde.</p><p>Tenho conhecimentos em R, RStudio, Excel e Git/GitHub, além de conhecimentos básicos em Python. Atualmente, estou aprofundando meus estudos em Python, SQL e ferramentas de tecnologia e análise de dados.</p><p>Tenho interesse em Ciência de Dados, Estatística Aplicada e desenvolvimento de soluções orientadas por dados.</p>
+</section>
+
+<section id="experiencias">
+  <span class="kicker">02 / experiências</span>
+  <h2>Experiências</h2>
+  <div class="xp"><article class="job main"><div class="job-h"><div><h3>Pesquisa em Avaliação Econômica em Saúde</h3><div class="org">OncoTag</div></div><span class="date">mar. 2026 – atual</span></div><p class="intro">Participação no Projeto VICTORIA, estudo multicêntrico que investiga um sistema de inteligência artificial para previsão do benefício da quimioterapia em câncer de mama triplo negativo e câncer de ovário.</p><ul><li>Coleta, organização e estruturação de dados clínicos e econômicos provenientes de diferentes fontes.</li><li>Organização de informações sobre custos, tratamentos, resposta terapêutica, progressão, sobrevida, eventos adversos e qualidade de vida.</li><li>Participação em análises de custo-efetividade e estimativa da Razão de Custo-Efetividade Incremental (RCEI).</li><li>Participação na avaliação de impacto orçamentário na perspectiva do SUS.</li><li>Desenvolvimento do OncoCusto, ferramenta de apoio à coleta e valoração de custos em avaliações econômicas em saúde.</li></ul></article><article class="job main"><div class="job-h"><div><h3>Pesquisadora em Análise de Dados</h3><div class="org">Instituto Mário Penna</div></div><span class="date">abr. 2026 – atual</span></div><p class="intro">Análise de dados em projetos de pesquisa, com atuação na organização e limpeza de bases, aplicação de métodos estatísticos, avaliação de desempenho de modelos preditivos, previsão de séries temporais e preparação de tabelas e gráficos.</p><p class="tool">Ferramenta principal: RStudio.</p></article><article class="job main"><div class="job-h"><div><h3>Iniciação Científica em Estatística Computacional</h3><div class="org">UFMG – Departamento de Estatística</div></div><span class="date">mar. 2026 – atual</span></div><p class="intro">Estudo de diferentes métodos de imputação para dados faltantes, com orientação de Lourdes Montenegro.</p><ul><li>Estudo dos mecanismos de ausência de dados MCAR, MAR e MNAR.</li><li>Implementação e comparação de métodos de imputação em R, utilizando bases reais e cenários simulados.</li><li>Avaliação do impacto dos dados faltantes nas análises e comparação do desempenho dos métodos por métricas estatísticas.</li><li>Preparação e tratamento de bases, análises e documentação dos procedimentos.</li></ul></article><article class="job"><div class="job-h"><div><h3>Estagiária em Perícia Atuarial e Consultoria</h3><div class="org">CCC Consultoria e Assessoria</div></div><span class="date">ago. 2025 – mar. 2026</span></div><ul><li>Organização, tratamento e validação de dados financeiros e atuariais em planilhas analíticas.</li><li>Realização e conferência de cálculos envolvendo valores, atualização monetária, juros e estimativas atuariais.</li><li>Identificação e verificação de inconsistências em dados e resultados.</li><li>Pesquisa normativa e comunicação de resultados quantitativos em pareceres e relatórios técnicos.</li></ul><p class="tool">Ferramenta principal: Excel.</p></article></div>
+</section>
+
+<section id="formacao">
+  <span class="kicker">03 / formação</span>
+  <h2>Formação</h2>
+  <div class="edu"><div class="box"><h3>Universidade Federal de Minas Gerais (UFMG)</h3><p>Bacharelado em Ciências Atuariais</p><p>mar. 2024 – jul. 2028.</p><p>Iniciação científica no Departamento de Estatística, na área de Estatística Computacional.</p></div><div class="box"><h3>Latin American Leadership Academy (LALA)</h3><p>Programa de Liderança – VLB32, 2023.</p></div></div>
+</section>
+
+<section id="projetos">
+  <span class="kicker">04 / projetos</span>
+  <h2>Projetos</h2>
+  <div class="cases"><article class="box case now"><div class="case-h"><h3>OncoCusto – Ferramenta de coleta e valoração de custos em saúde</h3><span class="date">set. 2026 – atual</span></div><p>Ferramenta idealizada para reduzir dificuldades de organização e inconsistências na coleta manual de dados de custos em avaliações econômicas em saúde.</p><ul><li>Estruturação de uma solução para converter registros de bases públicas em valores de referência de custos.</li><li>Integração de informações provenientes de fontes como SIGTAP/DATASUS, Banco de Preços em Saúde, CATMAT e IBGE.</li><li>Organização dos resultados e exportação em planilhas Excel por projeto.</li><li>Utilização de IA generativa como apoio à prototipagem e geração do código, a partir dos requisitos e instruções definidos por mim.</li><li>Revisão da estrutura e documentação das limitações da ferramenta.</li></ul><p class="tool">Repositório: <a href="https://github.com/isabelagsantos/OncoCusto" target="_blank" rel="noopener">github.com/isabelagsantos/OncoCusto</a></p></article><article class="box case now"><div class="case-h"><h3>Estatística Computacional – Imputação de Dados Faltantes</h3><span class="date">mar. 2026 – atual</span></div><p>Iniciação científica no Departamento de Estatística da UFMG.</p><ul><li>Estudo de MCAR, MAR e MNAR.</li><li>Implementação e comparação de métodos de imputação em R.</li><li>Análise de desempenho em bases reais e cenários simulados.</li></ul></article><article class="box case now"><div class="case-h"><h3>Registro Hospitalar de Câncer – Análise de Dados e Séries Temporais</h3><span class="date">abr. 2026 – atual</span></div><p>Estudo retrospectivo clínico-epidemiológico de câncer ginecológico e previsão de séries temporais de casos mensais.</p></article></div>
+  <h3 style="margin:42px 0 14px;font-size:1.2rem">Repositórios no GitHub</h3>
+  <div class="repos" id="repos"><p class="repo-note">Carregando repositórios…</p></div>
+  <div class="repos-more"><a class="btn" href="https://github.com/isabelagsantos?tab=repositories" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>Ver todos os repositórios</a></div>
+</section>
+
+<section id="competencias">
+  <span class="kicker">05 / competências</span>
+  <h2>Competências</h2>
+  <div class="skills"><div class="box skill"><h3><i></i>Principais</h3><div class="chips"><span class="chip hi">Análise de dados</span><span class="chip hi">Estatística aplicada</span><span class="chip hi">R</span><span class="chip hi">Análise exploratória de dados</span><span class="chip hi">Limpeza e tratamento de dados</span></div></div><div class="box skill"><h3><i></i>Outras competências</h3><div class="chips"><span class="chip ">RStudio</span><span class="chip ">Python (básico)</span><span class="chip ">Excel</span><span class="chip ">Git e GitHub</span><span class="chip ">Testes de hipótese</span><span class="chip ">Análise de associação e correlação</span><span class="chip ">Regressão</span><span class="chip ">Séries temporais</span><span class="chip ">Dados faltantes e imputação</span><span class="chip ">Métricas de classificação e avaliação diagnóstica</span><span class="chip ">Análise de custo-efetividade</span></div></div><div class="box skill"><h3><i></i>Em desenvolvimento</h3><div class="chips"><span class="chip dev">Python</span><span class="chip dev">SQL</span><span class="chip dev">Machine Learning</span></div></div><div class="box skill"><h3><i></i>Idiomas</h3><p>Português: nativo.</p><p>Inglês: EF SET 66/100 (resultado equivalente a C1 no teste).</p></div></div>
+</section>
+</main>
+
+<section class="contact" id="contato">
+  <svg class="mini-star" viewBox="0 0 400 400" aria-hidden="true"><polygon fill="#FFFFFF" points="200,10 222,160 300,40 245,175 390,130 255,205 380,300 240,235 260,395 205,250 150,390 170,240 30,330 150,205 5,170 160,170 95,30 185,155"/></svg>
+  <div class="contact-in">
+    <span class="kicker">06 / contato</span>
+    <h2>Vamos <em>conversar</em>?</h2>
+    <div class="links">
+      <a class="link" href="mailto:isabelagsantos.contato@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>E-mail<small>isabelagsantos.contato@gmail.com</small></span></a>
+      <a class="link" href="mailto:isabelasantos.ufmg@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>E-mail acadêmico<small>isabelasantos.ufmg@gmail.com</small></span></a>
+      <a class="link" href="https://www.linkedin.com/in/isabela-gon%C3%A7alves-dos-santos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg><span>LinkedIn<small>isabela-gonçalves-dos-santos</small></span></a>
+      <a class="link" href="https://github.com/isabelagsantos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg><span>GitHub<small>isabelagsantos</small></span></a>
+      <a class="link" href="https://orcid.org/0009-0008-1477-3238" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 10v7M8 7v.01M11 10v7h2.5a3.5 3.5 0 0 0 0-7H11z" stroke-linecap="round"/></svg><span>ORCID<small>0009-0008-1477-3238</small></span></a>
+      <a class="link" href="https://lattes.cnpq.br/9775676901926642" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg><span>Lattes<small>CNPq</small></span></a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr">2026</span> Isabela Gonçalves dos Santos · Belo Horizonte, MG</footer>
+<script>
+(function(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var box=document.getElementById('repos');
+  function fallback(){box.innerHTML='<p class="repo-note">Não foi possível carregar os repositórios agora.</p>'}
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  fetch('https://api.github.com/users/isabelagsantos/repos?per_page=100')
+    .then(function(r){if(!r.ok)throw 0;return r.json()})
+    .then(function(list){
+      var skip=['isabelagsantos.github.io','isabela_santos'];
+      list=list.filter(function(r){return !r.fork && skip.indexOf(r.name.toLowerCase())<0})
+        .sort(function(a,b){return (b.stargazers_count-a.stargazers_count)||(new Date(b.pushed_at||b.updated_at)-new Date(a.pushed_at||a.updated_at))}).slice(0,6);
+      if(!list.length){fallback();return}
+      box.innerHTML=list.map(function(r){
+        return '<a class="box repo" href="'+esc(r.html_url)+'" target="_blank" rel="noopener"><h3>'+esc(r.name)+'</h3>'+
+          (r.description?'<p>'+esc(r.description)+'</p>':'')+
+          '<div class="meta">'+(r.language?esc(r.language)+' · ':'')+'★ '+r.stargazers_count+'</div></a>';
+      }).join('');
+    }).catch(fallback);
+})();
+</script>
+</body>
+</html>
